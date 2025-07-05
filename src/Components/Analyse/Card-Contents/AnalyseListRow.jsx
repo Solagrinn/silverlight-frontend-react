@@ -40,8 +40,13 @@ const AnalyseListRow = ({ targetUrl, setSelectedAnalysis, currentPage, index }) 
     <Row
       className={`justify-content-between bg-secondary-subtle rounded-3 p-1 mt-3 ${isShown() ? '' : 'd-none'}`}
     >
-      <Col xs={'auto'} className={'align-content-center'}>
-        <span className={'fw-semibold me-3'}>{index}</span> {targetUrl}
+      <Col className={'align-content-center'}>
+        <Row>
+          <Col className={'fw-semibold '} xs={'auto'} md={2}>
+            {index}
+          </Col>
+          <Col>{targetUrl}</Col>
+        </Row>
       </Col>
       <Col xs={'auto'}>
         {isAnalysisDone && !isErrorShown ? (
