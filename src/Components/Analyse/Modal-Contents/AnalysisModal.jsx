@@ -3,15 +3,23 @@ import { useState } from 'react';
 
 const AnalysisModal = ({ selectedAnalysis, setSelectedAnalysis }) => {
   const [selectedGroup, setSelectedGroup] = useState([]);
+  const [selectedGroupName, setSelectedGroupName] = useState('');
 
   const groupNames = Object.keys(selectedAnalysis || {});
 
   const handleChooseGroup = (groupName) => {
     setSelectedGroup(selectedAnalysis[groupName]);
+    setSelectedGroupName(groupName);
+  };
+
+  const handleOnHide = () => {
+    setSelectedAnalysis(null);
+    setSelectedGroup([]);
+    setSelectedGroupName('');
   };
 
   return (
-    <Modal show={selectedAnalysis} onHide={() => setSelectedAnalysis(null)}>
+    <Modal show={selectedAnalysis} onHide={() => handleOnHide()}>
       <Modal.Header closeButton> Analysis</Modal.Header>
 
       <Modal.Body>
@@ -20,7 +28,8 @@ const AnalysisModal = ({ selectedAnalysis, setSelectedAnalysis }) => {
             return (
               <Button
                 key={index}
-                variant="outline-primary"
+                disabled={selectedGroupName === groupName}
+                variant="warning"
                 className="m-2 text-nowrap"
                 onClick={() => handleChooseGroup(groupName)}
               >
