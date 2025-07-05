@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Button, Col, Row } from 'react-bootstrap';
+//import staticData from '../../../../respose.json';
 import axios from 'axios';
 
 const AnalyseListRow = ({ targetUrl, setSelectedAnalysis, currentPage, index }) => {
@@ -15,6 +16,8 @@ const AnalyseListRow = ({ targetUrl, setSelectedAnalysis, currentPage, index }) 
   }, [targetUrl]);
 
   const sendAnalysisRequest = async (url) => {
+    // return {...staticData} // For testing without spending api credits
+
     try {
       const res = await axios.get('/api/builtwith', {
         params: { url },

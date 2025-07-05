@@ -1,5 +1,5 @@
 import { Card } from 'react-bootstrap';
-import AnalseInputSection from './Card-Contents/AnalseInputSection.jsx';
+import AnalyseInputSection from './Card-Contents/AnalyseInputSection.jsx';
 import AnalyseList from './Card-Contents/AnalyseList.jsx';
 import { useState } from 'react';
 import AnalysisModal from './Modal-Contents/AnalysisModal.jsx';
@@ -16,7 +16,7 @@ const AnalyseCard = () => {
         <Card.Body>
           <Card.Title>SilverLight</Card.Title>
 
-          <AnalseInputSection setTargetUrlList={setTargetUrlList}></AnalseInputSection>
+          <AnalyseInputSection setTargetUrlList={setTargetUrlList}></AnalyseInputSection>
 
           <AnalyseList
             targetUrlList={targetUrlList}

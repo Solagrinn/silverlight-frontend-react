@@ -1,0 +1,115 @@
+{
+  "ssl": [
+    "SSL by Default",
+    "HSTS",
+    "HSTS IncludeSubdomains PreLoad",
+    "Symantec Secure Site"
+  ],
+  "link": [
+    "LinkedIn",
+    "Twitter",
+    "API Developer",
+    "Facebook",
+    "Instagram",
+    "TikTok",
+    "YouTube Link",
+    "X"
+  ],
+  "framework": [
+    "Next.js",
+    "ContactPoint Schema",
+    "Organization Schema",
+    "Person Schema",
+    "PostalAddress Schema",
+    "Chakra UI",
+    "Facebook Domain Verification",
+    "OpenResty"
+  ],
+  "mobile": [
+    "Apple Mobile Web Clips Icon",
+    "Viewport Meta",
+    "IPhone / Mobile Compatible"
+  ],
+  "hosting": [
+    "Cloudflare Network Error Logging",
+    "Cloudflare Hosting",
+    "Fastly Hosted",
+    "Fastly Load Balancer"
+  ],
+  "cdns": [
+    "Cloudflare CDN"
+  ],
+  "cdn": [
+    "Cloudflare",
+    "jsDelivr",
+    "jQuery CDN"
+  ],
+  "Server": [
+    "IPv6"
+  ],
+  "mx": [
+    "SPF",
+    "Google Apps for Business",
+    "DMARC",
+    "DMARC None",
+    "DMARC Quarantine"
+  ],
+  "Web Master": [
+    "Yandex Verification",
+    "Google Webmaster"
+  ],
+  "ns": [
+    "Cloudflare DNS",
+    "DNSSEC"
+  ],
+  "javascript": [
+    "React",
+    "jQuery",
+    "Emotion",
+    "core-js",
+    "jQuery 3.5.1",
+    "FitVids.JS",
+    "imagesLoaded"
+  ],
+  "CDN": [
+    "Content Delivery Network"
+  ],
+  "analytics": [
+    "Google Analytics",
+    "Cloudflare Insights",
+    "Cloudflare Web Analytics",
+    "Visual Website Optimizer",
+    "Brevo",
+    "Fastly"
+  ],
+  "widgets": [
+    "Google Tag Manager",
+    "US Privacy User Signal Mechanism",
+    "Slack",
+    "CrUX Dataset",
+    "CrUX Top 50m",
+    "OpenAI",
+    "Cloudflare Bot Manager",
+    "CommonCrawl Top 1m"
+  ],
+  "ads": [
+    "DoubleClick.Net"
+  ],
+  "payment": [
+    "Paddle",
+    "Euro"
+  ],
+  "language": [
+    "English - Inferred"
+  ],
+  "cms": [
+    "Ghost",
+    "Ghost 5.X"
+  ],
+  "feeds": [
+    "RSS"
+  ],
+  "Web Server": [
+    "Varnish"
+  ]
+}
