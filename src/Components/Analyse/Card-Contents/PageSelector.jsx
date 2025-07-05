@@ -8,7 +8,7 @@ const PageSelector = ({
   maxVisible = 5, // total buttons including current page
 }) => {
   useEffect(() => {
-    if (currentPage > totalPageCount) {
+    if (totalPageCount > currentPage) {
       setCurrentPage(totalPageCount);
     }
   }, [totalPageCount, setCurrentPage]);
