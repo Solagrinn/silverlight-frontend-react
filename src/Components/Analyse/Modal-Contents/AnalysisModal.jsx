@@ -1,5 +1,5 @@
 import { Button, Card, Modal } from 'react-bootstrap';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 const AnalysisModal = ({ selectedAnalysis, setSelectedAnalysis }) => {
   const [selectedGroup, setSelectedGroup] = useState([]);
@@ -9,12 +9,6 @@ const AnalysisModal = ({ selectedAnalysis, setSelectedAnalysis }) => {
   const handleChooseGroup = (groupName) => {
     setSelectedGroup(selectedAnalysis[groupName]);
   };
-
-  useEffect(() => {
-    console.log(selectedGroup);
-
-    debugger;
-  }, [selectedGroup]);
 
   return (
     <Modal show={selectedAnalysis} onHide={() => setSelectedAnalysis(null)}>
