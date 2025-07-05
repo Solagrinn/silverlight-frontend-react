@@ -35,7 +35,15 @@ const AnalyseListRow = ({ targetUrl }) => {
       <Col xs={'auto'} className={'align-content-center'}>
         {targetUrl}
       </Col>
-      <Col xs={'auto'}>{isAnalysisDone ? <Button>View</Button> : 'Analysing...'}</Col>
+      <Col xs={'auto'}>
+        {isAnalysisDone && !isErrorShown ? (
+          <Button>View</Button>
+        ) : isErrorShown ? (
+          'Error'
+        ) : (
+          'Analysing...'
+        )}
+      </Col>
     </Row>
   );
 };
