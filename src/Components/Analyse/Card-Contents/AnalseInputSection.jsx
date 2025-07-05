@@ -70,7 +70,7 @@ const AnalseInputSection = ({ setTargetUrlList }) => {
                 <Button
                   onClick={() => checkUrlValidity(urlToBeAnalysed)}
                   className="w-100"
-                  variant="secondary"
+                  variant="outline-success"
                   disabled={isValid}
                 >
                   Validate
